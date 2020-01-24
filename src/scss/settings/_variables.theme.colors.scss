@@ -1,0 +1,26 @@
+// We can see if this ends up being useful with future themes
+$hb-theme--colors: (
+  airy: (),
+  colorful: (
+    color-teal: $su-color-teal,
+    color-mint: $su-color-mint,
+    color-sun: $su-color-sun,
+    color-poppy: $su-color-poppy,
+    color-purple: $su-color-purple,
+    color-sky: $su-color-sky
+  ),
+  traditional: ()
+);
+
+$hb-colorful--variations: (
+  colorful-teal: (
+    primary: $su-color-teal,
+    secondary: $su-color-mint,
+    tertiary: $su-color-sky
+  ),
+  colorful-mint: (
+    primary: $su-color-mint,
+    secondary: $su-color-purple,
+    tertiary: darken($su-color-sky, 30%)
+  )
+);
