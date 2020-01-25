@@ -1,0 +1,20 @@
+.hb-vertical-view {
+  @include hb-page-width;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__card {
+    background-color: plum; // single column // wip: remove
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    @include grid-media-min('sm') { // 2 columns
+      width: 48.75%;
+    }
+
+    @include grid-media-min('md') { // 3 columns
+      width: 31.75%;
+    }
+  }
+}

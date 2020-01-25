@@ -89,9 +89,12 @@
   //    and our UI components are often composed of Objects and Components
   'components/pattern.horizontal-card',
   'components/masthead',
+  'components/view.three-card-vertical',
+  'components/view.two-card-horizontal',
 
   // =====================================================================
   // 8. Utilities
   //    Utilities and helper classes with ability to override anything
   //    which goes before in the triangle, eg. hide helper class
   'utilities/fonts';
+  
