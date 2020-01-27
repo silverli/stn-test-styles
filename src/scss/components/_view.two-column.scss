@@ -1,11 +1,10 @@
-.hb-horizontal-view {
+.hb-two-column {
   @include hb-page-width;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
   &__card {
-    background-color: greenyellow; // wip: remove!!
     margin-bottom: 1.5rem;
     width: 100%;
 
