@@ -1,19 +1,22 @@
-.hb-three-column {
+.hb-grid {
   @include hb-page-width;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  &__card {
+  // Default to two column
+  &__item {
     margin-bottom: 1.5rem;
     width: 100%;
 
     @include grid-media-min('sm') {
-      width: 48.75%;
+      width: calc(50% - 0.75rem);
     }
 
-    @include grid-media-min('md') {
-      width: 31.75%;
+    .hb-grid--cols-3 & {
+      @include grid-media-min('md') {
+        width: calc(31.75% - 0.15rem);
+      }
     }
   }
 }
